@@ -1,8 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import NavBar from "./Components/NavBar";
 import EmployeeList from "./Components/EmployeeList";
 
-const App = () => {
+export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+
+    }
+  }
+  render() {
   return (
     <>
       <NavBar />
@@ -10,5 +17,8 @@ const App = () => {
     </>
   );
 };
+}
 
-export default App;
+
+// https://vet-lab-8-4.herokuapp.com/
+// https://vet-lab-8-4.herokuapp.com/api/employees

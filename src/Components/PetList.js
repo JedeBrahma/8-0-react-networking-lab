@@ -1,9 +1,18 @@
-export const PetList = () => {
+import React, { Component } from 'react'
+
+export default class PetList extends Component {
+  constructor(props) {
+    super(props) 
+     
+  }
+render() {
+  const {petArr} = this.props
   return (
     <aside className="pets-list">
-      <p>No pets listed for this employee.</p>
+   
+      <p>{console.log(petArr)}</p>
     </aside>
   );
 };
 
-export default PetList;
+}
